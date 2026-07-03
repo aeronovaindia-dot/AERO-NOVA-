@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aeronovaindia-dot.github.io/AERO-NOVA-/sitemap.xml
