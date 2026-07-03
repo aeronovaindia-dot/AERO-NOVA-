@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERO NOVA | Ultra-Fast EV Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#05070B',
+                            dark: '#0F131A',
+                            card: '#161C26',
+                            green: '#10B981', /* Premium Electric Emerald */
+                            glow: '#34D399'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons Vector Set -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-black text-gray-200 font-sans antialiased selection:bg-brand-green selection:text-brand-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-black/90 backdrop-blur-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="zap" class="text-brand-green w-7 h-7"></i>
+                <span class="text-xl font-black tracking-widest text-white">AERO<span class="text-brand-green">NOVA</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-widest text-gray-400">
+                <a href="#metrics-panel" class="hover:text-white transition-colors">EV Matrix</a>
+                <a href="#care-center" class="hover:text-white transition-colors">Customer Support</a>
+            </div>
+            <div>
+                <a href="#metrics-panel" class="bg-white text-brand-black font-bold px-6 py-2.5 rounded-full text-xs uppercase tracking-wider hover:bg-brand-green hover:text-brand-black transition-all inline-flex items-center gap-2">
+                    Analyze Rates
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#10b981_0.8px,transparent_0.8px)] [background-size:32px_32px] opacity-5 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <!-- Left Text Frame -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark border border-gray-800 text-xs font-bold tracking-widest text-brand-green uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+                    Premium Zero-Emission Fleet Network
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight leading-[1.1]">
+                    Power Redefined.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-brand-green">Pure Efficiency.</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    AERO NOVA blends deep structural aesthetics with hyper-engineered delivery, outputting 350kW power loops for instant luxury EV replenishment.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#metrics-panel" class="w-full sm:w-auto text-center bg-brand-green text-brand-black font-bold px-8 py-4 rounded-xl text-sm uppercase tracking-wider shadow-lg shadow-brand-green/20 hover:opacity-90 transition-opacity">
+                        View Vehicle Matrix
+                    </a>
+                    <a href="#care-center" class="w-full sm:w-auto text-center bg-transparent border border-gray-700 text-white font-bold px-8 py-4 rounded-xl text-sm uppercase tracking-wider hover:border-brand-green transition-colors">
+                        Customer Care
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual Panel (Minimal Digital UI Interface) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="w-full max-w-sm bg-brand-dark border border-gray-800 rounded-3xl p-6 space-y-6 shadow-2xl relative">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-green/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                            <span class="text-xs font-mono tracking-widest text-gray-400">AN_DIAGNOSTICS</span>
+                        </div>
+                        <i data-lucide="activity" class="w-4 h-4 text-brand-green"></i>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold block">Current Node Output</span>
+                        <div class="text-5xl font-mono font-black text-white flex items-baseline gap-1">
+                            350<span class="text-lg font-sans text-brand-green font-normal">kW</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Loading Bar Arc -->
+                    <div class="space-y-2 pt-2">
+                        <div class="flex justify-between text-xs font-mono">
+                            <span class="text-gray-400">Battery State</span>
+                            <span class="text-brand-green font-bold">80% Optimized</span>
+                        </div>
+                        <div class="w-full h-2 bg-brand-black rounded-full overflow-hidden border border-gray-800">
+                            <div class="h-full bg-gradient-to-r from-brand-green to-emerald-300 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2 text-xs border-t border-gray-800/60">
+                        <div>
+                            <span class="text-gray-500 block text-[10px] uppercase font-bold">Base Rate</span>
+                            <span class="font-mono text-white text-sm">$0.42 / kWh</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 block text-[10px] uppercase font-bold">Connection</span>
+                            <span class="font-mono text-white text-sm">NACS / CCS V2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EV Model Full Charge & Cost Matrix Grid Chart -->
+    <section id="metrics-panel" class="py-24 bg-brand-dark/50 border-y border-gray-800 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Charging Performance Matrix</h2>
+                <p class="text-gray-400 text-sm">Real data measurements across core current production EV architectures using the AERO NOVA 350kW liquid-cooled line loop.</p>
+            </div>
+
+            <!-- Dynamic Chart Display Dashboard Layout -->
+            <div class="bg-brand-dark border border-gray-800 rounded-3xl p-6 md:p-8 shadow-2xl space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-800 pb-6">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-green font-bold block">Live Telemetry</span>
+                        <h3 class="text-lg font-bold text-white">Full-Charge Cycle Metrics (10% to 80%)</h3>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs font-mono">
+                        <span class="flex items-center gap-1.5 text-white">
+                            <span class="w-3 h-3 rounded bg-brand-green block"></span> Time (Mins)
+                        </span>
+                        <span class="flex items-center gap-1.5 text-gray-400">
+                            <span class="w-3 h-3 rounded bg-white block"></span> Cost (USD)
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Custom Bar Chart Grid Matrix -->
+                <div class="space-y-8">
+                    <!-- Row 1: High-End Sedan (e.g. Taycan / Lucids) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm items-center">
+                            <span class="font-bold text-white flex items-center gap-2">
+                                <i data-lucide="car" class="w-4 h-4 text-brand-green"></i> High-Voltage Luxury Sedan <span class="text-xs font-mono font-normal text-gray-500">(93 kWh battery)</span>
+                            </span>
+                            <span class="font-mono text-xs text-gray-400">Est. Cost: <strong class="text-white">$27.30</strong></span>
+                        </div>
+                        <div class="grid grid-cols-12 items-center gap-4">
+                            <div class="col-span-10 w-full bg-brand-black h-8 rounded-lg overflow-hidden relative border border-gray-800">
+                                <div class="h-full bg-brand-green rounded-r-md flex items-center px-3 text-[11px] font-mono font-bold text-brand-black transition-all" style="width: 22%">
+                                    15.4 Mins
+                                </div>
+                            </div>
+                            <div class="col-span-2 font-mono text-xs text-right text-brand-green font-bold">Hyper Speed</div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Standard Long Range Long-Range SUV/Sedan (e.g. Model Y / Ioniq 5) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm items-center">
+                            <span class="font-bold text-white flex items-center gap-2">
+                                <i data-lucide="car" class="w-4 h-4 text-brand-green"></i> Extended Range Long-Range SUV <span class="text-xs font-mono font-normal text-gray-500">(77 kWh battery)</span>
+                            </span>
+                            <span class="font-mono text-xs text-gray-400">Est. Cost: <strong class="text-white">$22.60</strong></span>
+                        </div>
+                        <div class="grid grid-cols-12 items-center gap-4">
+                            <div class="col-span-10 w-full bg-brand-black h-8 rounded-lg overflow-hidden relative border border-gray-800">
+                                <div class="h-full bg-brand-green rounded-r-md flex items-center px-3 text-[11px] font-mono font-bold text-brand-black transition-all" style="width: 26%">
+                                    18.2 Mins
+                                </div>
+                            </div>
+                            <div class="col-span-2 font-mono text-xs text-right text-brand-green font-bold">Optimal Speed</div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Heavy Utility Truck / SUV (e.g. Hummer EV / Silverado EV) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm items-center">
+                            <span class="font-bold text-white flex items-center gap-2">
+                                <i data-lucide="truck" class="w-4 h-4 text-brand-green"></i> Heavy Duty Utility Truck <span class="text-xs font-mono font-normal text-gray-500">(130 kWh battery)</span>
+                            </span>
+                            <span class="font-mono text-xs text-gray-400">Est. Cost: <strong class="text-white">$38.20</strong></span>
+                        </div>
+                        <div class="grid grid-cols-12 items-center gap-4">
+                            <div class="col-span-10 w-full bg-brand-black h-8 rounded-lg overflow-hidden relative border border-gray-800">
+                                <div class="h-full bg-brand-green rounded-r-md flex items-center px-3 text-[11px] font-mono font-bold text-brand-black transition-all" style="width: 42%">
+                                    29.5 Mins
+                                </div>
+                            </div>
+                            <div class="col-span-2 font-mono text-xs text-right text-brand-green font-bold">Max Capacity</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-brand-black/40 rounded-xl border border-gray-800/80 text-xs text-gray-400 flex items-center gap-2">
+                    <i data-lucide="info" class="w-4 h-4 text-brand-green shrink-0"></i>
+                    <span>Calculations assume standard ambient thermal states ($25^\circ\text{C}$). Rates mapped uniformly at base network cost ($0.42 / \text{kWh}$).</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Customer Care Portal Section -->
+    <section id="care-center" class="py-24 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Details Text Column -->
+                <div class="lg:col-span-5 space-y-4 text-center lg:text-left">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-green block">Support Node Matrix</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Always Online Customer Care</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Encountered a site hardware anomaly? Our central command dispatch center monitors every terminal connection 24 hours a day, 7 days a week.
+                    </p>
+                    <div class="pt-2">
+                        <a href="tel:18005550199" class="inline-flex items-center gap-3 bg-white text-brand-black font-mono font-bold text-sm px-6 py-3 rounded-xl hover:bg-brand-green hover:text-brand-black transition-all">
+                            <i data-lucide="phone-call" class="w-4 h-4"></i>
+                            +1 (800) 555-NOVA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Interaction Cards Column -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Support Card 1 -->
+                    <div class="bg-brand-dark p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-green/10 flex items-center justify-center border border-brand-green/20">
+                            <i data-lucide="help-circle" class="text-brand-green w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wide">Instant Driver FAQ</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Find rapid operational solutions covering billing authorizations, protocol overrides, or plug errors.</p>
+                    </div>
+
+                    <!-- Support Card 2 -->
+                    <div class="bg-brand-dark p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-green/10 flex items-center justify-center border border-brand-green/20">
+                            <i data-lucide="message-square" class="text-brand-green w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wide">Live Chat Dispatch</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Initiate an end-to-end encrypted link with field engineers for real-time station diagnostics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="bg-brand-black border-t border-gray-800 py-12 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="zap" class="text-brand-green w-5 h-5"></i>
+                <span class="font-black tracking-widest text-white">AERO<span class="text-brand-green">NOVA</span></span>
+            </div>
+            <div>&copy; 2026 Aero Nova Technologies Inc. Communications encrypted.</div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Infrastructure</a>
+                <a href="#" class="hover:text-white transition-colors">System Architecture</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mount all interactive Lucide icons gracefully onto layout nodes
+        lucide.createIcons();
+    </script>
+</body>
+</html>
